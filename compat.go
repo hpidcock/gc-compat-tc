@@ -26,6 +26,7 @@ var (
 )
 
 func TestingT(t *testing.T) {
+	t.Helper()
 	tc.TestingT(t)
 }
 
