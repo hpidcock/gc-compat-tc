@@ -3,7 +3,7 @@ module gopkg.in/check.v1
 go 1.24.2
 
 require (
-	github.com/juju/tc v0.0.0-20250507150813-1d13c1fc4d6c
+	github.com/juju/tc v0.0.0-20250523041547-7f66c35f9f03
 	github.com/kr/pretty v0.3.1
 )
 

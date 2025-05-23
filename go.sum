@@ -1,6 +1,6 @@
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
-github.com/juju/tc v0.0.0-20250507150813-1d13c1fc4d6c h1:gXDpkRi0//rLt3pFshFgSCKJihg99n/astF0/nLJuKw=
-github.com/juju/tc v0.0.0-20250507150813-1d13c1fc4d6c/go.mod h1:YdExdo5XpLqX+BT6eCcS8HCqbZO09fP3mwoiJXv35Vg=
+github.com/juju/tc v0.0.0-20250523041547-7f66c35f9f03 h1:x/rsZcDhRKEubIDOnSXRUMTs5I6/lGyT7Sd7xAmkazo=
+github.com/juju/tc v0.0.0-20250523041547-7f66c35f9f03/go.mod h1:YdExdo5XpLqX+BT6eCcS8HCqbZO09fP3mwoiJXv35Vg=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
 github.com/kr/pretty v0.3.1/go.mod h1:hoEshYVHaxMs3cyo3Yncou5ZscifuDolrwPKZanG3xk=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=

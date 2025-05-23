@@ -27,11 +27,11 @@ var (
 
 func TestingT(t *testing.T) {
 	t.Helper()
-	tc.TestingT(t)
+	tc.InternalTestingT(t)
 }
 
 func Suite(suite any) any {
-	return tc.Suite(suite)
+	return tc.InternalSuite(suite)
 }
 
 func Not(checker Checker) Checker {
