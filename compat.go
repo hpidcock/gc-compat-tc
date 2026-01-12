@@ -12,32 +12,41 @@ type CheckerInfo = tc.CheckerInfo
 type CommentInterface = tc.CommentInterface
 
 var (
-	IsNil        Checker = tc.IsNil
-	NotNil       Checker = tc.NotNil
-	Equals       Checker = tc.Equals
-	DeepEquals   Checker = deepEquals()
-	HasLen       Checker = tc.HasLen
-	ErrorMatches Checker = tc.ErrorMatches
-	Matches      Checker = tc.Matches
-	Panics       Checker = tc.Panics
-	PanicMatches Checker = tc.PanicMatches
-	FitsTypeOf   Checker = tc.FitsTypeOf
-	Implements   Checker = tc.Implements
+	IsNil        Checker = panicChecker{}
+	NotNil       Checker = panicChecker{}
+	Equals       Checker = panicChecker{}
+	DeepEquals   Checker = panicChecker{}
+	HasLen       Checker = panicChecker{}
+	ErrorMatches Checker = panicChecker{}
+	Matches      Checker = panicChecker{}
+	Panics       Checker = panicChecker{}
+	PanicMatches Checker = panicChecker{}
+	FitsTypeOf   Checker = panicChecker{}
+	Implements   Checker = panicChecker{}
 )
 
 func TestingT(t *testing.T) {
-	t.Helper()
-	tc.InternalTestingT(t)
+	panic("use tc.C")
 }
 
 func Suite(suite any) any {
-	return tc.InternalSuite(suite)
+	panic("use tc.C")
 }
 
 func Not(checker Checker) Checker {
-	return tc.Not(checker)
+	panic("use tc.C")
 }
 
 func Commentf(format string, args ...any) CommentInterface {
-	return tc.Commentf(format, args)
+	panic("use tc.C")
+}
+
+type panicChecker struct{}
+
+func (panicChecker) Info() *tc.CheckerInfo {
+	panic("use tc.C")
+}
+
+func (panicChecker) Check(params []any, names []string) (result bool, error string) {
+	panic("use tc.C")
 }
